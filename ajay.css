@@ -1,0 +1,168 @@
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Section */
+section {
+    padding: 2rem 0;
+}
+
+/* About Section */
+.about-content {
+    text-align: center; /* Center content in the about section */
+}
+
+.about-details {
+    margin-top: 1rem;
+}
+
+/* Portfolio Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for 4 cards */
+    gap: 1rem;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    height: 200px; /* Decreased size */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Bar */
+.skill-bar {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    height: 20px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.skill-level {
+    background-color: #333;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.skill-percentage {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #333;
+    font-size: 12px;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center align the contact form */
+    align-items: center; /* Center align the contact form vertically */
+    min-height: 300px; /* Adjust as needed to ensure enough space for centering */
+}
+
+#contact-form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid */
+    gap: 1rem;
+    background: white; /* Background color for contrast */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for visual appeal */
+    max-width: 500px; /* Max width of the form */
+    width: 100%; /* Ensure form uses full available width up to max-width */
+}
+
+#contact-form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5rem; /* Spacing between label and input */
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 0.5rem; /* Padding inside inputs and textarea */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 1rem; /* Spacing between inputs */
+}
+
+#contact-form button {
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 0.75rem 1.5rem; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button text */
+}
+
+#contact-form button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
